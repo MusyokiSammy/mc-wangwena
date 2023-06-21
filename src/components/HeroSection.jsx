@@ -23,9 +23,11 @@ const HeroSection = () => {
                 </button>
             </div>
             <div className='w-full flex items-center justify-end'>
-                <div className='hexagon'/>
+                <div className='hexagon'>
+                    <img src={wangwena} alt="" className='p-4 ml-4 backdrop:blur-sm w-full object-contain object-center'/>
+                </div>
+
                 <div className='absolute h-[450px] w-[390px] bottom-20 right-3'>
-                    <img src={wangwena} alt="" className='w-full h-full'/>
                 </div>
             </div>
         </div>
