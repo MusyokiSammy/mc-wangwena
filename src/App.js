@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Header.component";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Home from "./Pages/Home";
 

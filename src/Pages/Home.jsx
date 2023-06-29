@@ -1,12 +1,20 @@
 import React from 'react'
-import Header from '../components/Header.component'
 import HeroSection from '../components/HeroSection'
+import Service from '../components/Service'
+import Navbar from '../components/Navbar'
+import PromotionWrapperSLider from '../components/PromotionWrapper'
+// import AboutSection from '../components/AboutSection'
+import About from '../components/About'
 
 const Home = () => {
   return (
     <React.Fragment>
-        <Header/>
+        <Navbar/>
         <HeroSection/>
+        <Service/>
+        <PromotionWrapperSLider/>
+        {/* <AboutSection/> */}
+        <About/>
     </React.Fragment>
   )
 }

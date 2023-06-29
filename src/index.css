@@ -2,11 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-.hexagon {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inconsolata&family=Montserrat:wght@300;400;500;600;700&family=Parisienne&family=Patrick+Hand&family=Poppins&display=swap');
+
+
+.hexadesk {
+    position: relative;
     width: 450px;
     height: 550px;
     clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    background: linear-gradient(rgb(255, 217, 0), rgba(255, 217, 0, 0));
+    background: linear-gradient(rgb(250, 249, 247), rgba(255, 255, 255, 0.185));
+}
+
+.hexadesk-2 {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 442px;
+    height: 542px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background: linear-gradient(rgb(216, 184, 0), rgba(255, 217, 0, 0));
+}
+
+.hexamobi {
     position: relative;
-    border-radius: 16px;
+    width: 340px;
+    height: 440px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background: linear-gradient(rgb(250, 249, 247), rgba(255, 255, 255, 0.185));
+}
+
+.hexamobi-2 {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 332px;
+    height: 432px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background: linear-gradient(rgb(216, 184, 0), rgba(255, 217, 0, 0));
+}
+
+
+/* Looper styles */
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;   
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  animation: none;
+}
+
+
+/* Example content styles */
+:root {  
+  --green: #f1e53c;
+  --offwhite: #EBEBEB;
+  --red: #e65a5e;
+}
+.description {
+  margin-bottom: 16px;  
+  text-align: center;
+}
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 6px;
+  padding: 16px; 
+  font-weight: 600;
+  font-size:large;
+  text-align: center;
+  border-radius: 10px;
+}
+.contentBlock--one {  
+  width: 100%;
+  background: rgba(141, 128, 10, 0.664);    
+  font-weight: 600;
+  font-size: 24px; 
+}
+.contentBlock--one:last-of-type {
+  color: var(--green);
+  margin-right: 36px;
+}
+.contentBlock--two {    
+  color: var(--green);  
+  font-size: 48px;
+  background: rgb(241, 239, 96);  
 }
