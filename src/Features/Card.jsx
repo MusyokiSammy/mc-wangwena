@@ -10,6 +10,7 @@ const CardHover = styled.div`
     height: 24rem;
     width: 20rem;
     z-index: 1;
+    cursor: pointer;
 
     &::before {
         content:'';
@@ -27,6 +28,7 @@ const CardHover = styled.div`
 
     &:hover::before {
         top: 0;
+        
     }
 
     @media (max-width: 640px) {
@@ -56,11 +58,11 @@ const Card = ({content}) => {
           <span className="p-1 bg-blueish shadow-2xl rounded-lg">
             <img src={Icon} alt="Icon" size={32} />
           </span>
-          <h2 className="group-hover:z-10 text-3xl text-dark-goldish group-hover:text-card-blueish font-extrabold">
+          <h2 className="group-hover:z-10 text-2xl sm:text-3xl text-dark-goldish group-hover:text-card-blueish font-extrabold">
             {content.name}
           </h2>
           <Link to="#" className="text-gray-50 relative">
-            <span className="group-hover:z-10 text-2xl font-bold">
+            <span className="group-hover:z-10 text-xl md:text-2xl font-bold">
               See More...
             </span>
           </Link>
