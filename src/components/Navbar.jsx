@@ -15,7 +15,7 @@ const Navbar = () => {
     <React.Fragment>
       <header className="relative isolate inset-x-0 top-0 shadow-2xl bg-blueish">
         <nav
-          className="flex items-center justify-between p-4 px-10 lg:px-16  max-w-[1560px] mx-auto"
+          className="flex items-center justify-between p-4  max-w-[1560px] mx-auto"
           aria-label="Global"
         >
           <div className="flex items-center justify-center gap-2">
@@ -51,9 +51,7 @@ const Navbar = () => {
                             <li key={data.id}
                             className='p-1 bg-card-blueish rounded-lg hover:bg-goldish border border-goldish'
                             >
-                                <Link to={data.link}>
                                 <IconListItem icon={data}/>
-                                </Link>
                             </li>
                         )
                     })
@@ -73,9 +71,7 @@ const Navbar = () => {
                   key={data.id}
                   className="p-1 bg-card-blueish rounded-lg border border-goldish hover:bg-goldish"
                 >
-                  <Link to={data.link}>
                     <IconListItem icon={data} />
-                  </Link>
                 </li>
               );
             })}

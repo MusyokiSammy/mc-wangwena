@@ -27,7 +27,7 @@ const ContactSection = () => {
                   className="block w-full px-4 py-2 text-black placeholder-goldish transition-all duration-200 bg-blue-50 border border-gray-200 rounded-md focus:outline-none focus:border-blueish caret-card-blueish"
                 />
               </label>
-              <label htmlFor="" className="flex flex-col">
+              <label htmlFor="email" className="flex flex-col">
                 <span className="text-base font-semibold text-gray-900">
                   Email Address
                 </span>
@@ -53,14 +53,14 @@ const ContactSection = () => {
               </label>
             </div>
             <div>
-              <label htmlFor="Message" className="flex flex-col">
+              <label htmlFor="message" className="flex flex-col">
                 <span className="text-base font-semibold text-gray-900">
                   Message
                 </span>
                 <textarea
                   type="text"
-                  name="firstname"
-                  id=""
+                  name="message"
+                  id="message"
                   placeholder="Write me a message"
                   className="block w-full px-4 py-4 text-black placeholder-goldish transition-all duration-200 bg-blue-50 border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blueish caret-card-blueish"
                   rows="4"

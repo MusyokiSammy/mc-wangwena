@@ -42,7 +42,6 @@ const Card = ({content}) => {
   return (
     <React.Fragment>
       <CardHover
-      key={content.id}
         style={{
           WebkitBoxReflect:
             "below 10px linear-gradient(to bottom, rgb(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4))",
