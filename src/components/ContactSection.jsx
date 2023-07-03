@@ -20,6 +20,7 @@ const ContactSection = () => {
                   Full Name
                 </span>
                 <input
+                  required
                   type="text"
                   name="fullname"
                   id="fullname"
@@ -32,6 +33,7 @@ const ContactSection = () => {
                   Email Address
                 </span>
                 <input
+                  required
                   type="email"
                   name="email"
                   id="email"
@@ -58,6 +60,7 @@ const ContactSection = () => {
                   Message
                 </span>
                 <textarea
+                  required
                   type="text"
                   name="message"
                   id="message"
